@@ -7,7 +7,11 @@ public class Main {
 		Pokemon p1 = new Pokemon("Pikachu", 100, 15);
 		Pokemon p2 = new Pokemon("Bulbisard", 100, 10);
 		
-		p1.attackPokemon(p2);
+		p1.attack(p2);
+		System.out.println(p2.isDead());
+		p2.attack(p1);
+		System.out.println(p1.isDead());
+		System.out.println(p1);
 		
 	}
 
