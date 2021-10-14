@@ -47,7 +47,15 @@ public class Pokemon {
 		this.hp = hp;
 	}
 
+	public int getAtk() {
+		return this.atk;
+	}
+	
+	public void setAtk(int atk) {
+		this.atk = atk;
+	}
 
+	
 	@Override
 	public String toString() {
 		return "Pokemon [name=" + name + ", hp=" + hp + ", atk=" + atk + "]";

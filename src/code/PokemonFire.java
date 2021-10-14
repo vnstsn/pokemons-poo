@@ -6,8 +6,17 @@ public class PokemonFire extends Pokemon {
 		super();
 	}
 	
-	public void attackPokemon(PokemonPlant pokemonPlant) {
-		this.attackPokemon(pokemonPlant);
+	public PokemonFire(String name, int hp, int atk) {
+		super(name, hp, atk);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+	public void attackPokemonPlant(PokemonPlant pokemonPlant) {
+		super.attack(pokemonPlant);
+		int atkMax = 2*(this.getAtk());
+		this.attackPokemonPlant(pokemonPlant);
 		
 	}
 }
