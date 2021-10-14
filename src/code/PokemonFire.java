@@ -11,12 +11,21 @@ public class PokemonFire extends Pokemon {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
-	public void attackPokemonPlant(PokemonPlant pokemonPlant) {
-		super.attack(pokemonPlant);
-		int atkMax = 2*(this.getAtk());
-		this.attackPokemonPlant(pokemonPlant);
-		
+	public void attack(Pokemon pokemon) {
+		if(pokemon instanceof PokemonPlant) {
+			System.out.println(this.getName() + " attacks " + pokemon.getName());
+		}
 	}
+	
+	/*
+	public void attackPokemonPlant(PokemonPlant pokemonPlant) {
+		this.setAtk(this.getAtk()*2);
+		super.attack(pokemonPlant);
+	}
+	
+	public void attackPokemonWater(PokemonWater pokemonWater) {
+		this.setAtk((int) (this.getAtk()*0.5));
+		super.attack(pokemonWater);
+	}
+	*/
 }

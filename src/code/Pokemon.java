@@ -16,13 +16,14 @@ public class Pokemon {
 	
 	
 	public boolean isDead() {
+		boolean result = false;
 		if(this.hp == 0) {
 			return true;
 			//System.out.println(this + " is DEAD");
-		} else {
-			return false;
+		} 
+			return result;
 			//System.out.println(this + " is still alive");
-		}
+		
 	}
 	
 	public void attack(Pokemon pokemon) {
@@ -55,6 +56,13 @@ public class Pokemon {
 		this.atk = atk;
 	}
 
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 	
 	@Override
 	public String toString() {

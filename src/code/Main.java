@@ -33,6 +33,17 @@ public class Main {
 		
 		PokemonWater pw1 = new PokemonWater("Carapuce", 100, 15);
 		System.out.println(pw1);
+		
+		System.out.println("***************************************");
+		/*
+		pf1.attackPokemonPlant(pp1);
+		System.out.println(pp1);
+		
+		System.out.println("***************************************");
+		
+		pf1.attackPokemonWater(pw1);
+		System.out.println(pw1);
+		*/
 	}
 
 }

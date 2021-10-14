@@ -12,4 +12,5 @@ public class PokemonWater extends Pokemon{
 		// TODO Auto-generated constructor stub
 	}
 
+	
 }
