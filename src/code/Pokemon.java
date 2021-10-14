@@ -24,9 +24,18 @@ public class Pokemon {
 		}
 	}
 	
-//	public void attackPokemon() {
-//		(this.hp - this.atk);
-//	}
+	public void attackPokemon(Pokemon pokemon) {
+		int hpLeft = pokemon.hp - this.atk;
+		System.out.println(this.name + " attacks " + pokemon.name + " !! " + pokemon.name + " has " + hpLeft + " left.");
+	}
+	
+	public int getHp() {
+		return this.hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
 
 	@Override
 	public String toString() {
